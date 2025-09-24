@@ -31,4 +31,14 @@ describe('Checkout extended scenarios', () => {
     for (let i = 0; i < 5; i++) co.scan('ipd');
     expect(co.total()).toBe(Number((5 * 499.99).toFixed(2)));
   });
+
+  test('Should charge $2718.95 when buying 5 Super iPADs and 2 Apple TVs', () => {
+    const rules = [new BulkDiscountRule('ipd', 5, 499.99)];
+    const co = new Checkout(rules);
+    co.scan('atv'); co.scan('ipd'); co.scan('ipd');
+    co.scan('atv'); co.scan('ipd'); co.scan('ipd');
+    co.scan('ipd');
+    const expected = 2718.95;
+    expect(co.total()).toBe(expected);
+  });
 });
