@@ -2,10 +2,10 @@
   "name": "code-challenge-bff",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --runInBand",
     "prepare": "npm run build"
   },
   "repository": {
@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/rishikm24/code-challenge-bff#readme",
   "devDependencies": {
-    "@types/jest": "^30.0.0",
-    "typescript": "^5.9.2"
-  },
-  "dependencies": {}
+    "@types/jest": "^29.5.2",
+    "jest": "^29.6.1",
+    "ts-jest": "^29.4.4",
+    "typescript": "^5.5.0"
+  }
 }
