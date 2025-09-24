@@ -1,0 +1,26 @@
+{
+  "name": "code-challenge-bff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishikm24/code-challenge-bff.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishikm24/code-challenge-bff/issues"
+  },
+  "homepage": "https://github.com/rishikm24/code-challenge-bff#readme",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {}
+}
