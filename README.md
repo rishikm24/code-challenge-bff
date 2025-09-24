@@ -20,17 +20,22 @@ This repo contains a TypeScript implementation of the checkout kata (Zeller code
 ```bash
 git clone <repo-url>
 cd code-challenge-bff
-
+```
 
 2. Install dependencies:
 
-```npm install
-
+```bash
+npm install
+```
 
 3. Run tests. All tests are in src/__tests__/checkout.test.ts.
 
-```npm test
+```bash
+npm test
+```
 
 4. If you want to compile TypeScript to JavaScript:
 
+```bash
 npm run build
+```
